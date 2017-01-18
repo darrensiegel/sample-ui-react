@@ -21,7 +21,9 @@ $ gulp dist
 Then build and deploy the NGINX container.
 
 ```
-$ docker built -t <user name>/web-server .
+$ docker build -t <user name>/web-server .
 
 $ docker run -d --name web-server -p 8080:8080 <user name>/web-server
 ```
+
+Finally access the running site via http://localhost:8080/index.html
